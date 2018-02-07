@@ -11,5 +11,5 @@ def hello():
 @app.route("/v1/time", strict_slashes=False)
 def v1_time():
     return json.dumps({
-        'time': time.ctime()
+        'time': time.ctime() + " UTC"
     })
