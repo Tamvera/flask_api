@@ -14,4 +14,4 @@ RUN ./ve/bin/pip install Flask
 EXPOSE 8080
 
 ENV FLASK_APP /src/main.py
-ENTRYPOINT /src/ve/bin/flask run -p 8080
+ENTRYPOINT /src/ve/bin/flask run -p 8080 -h 0.0.0.0
